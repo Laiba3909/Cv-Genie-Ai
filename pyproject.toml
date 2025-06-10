@@ -1,12 +1,11 @@
 [project]
 name = "multiagent-st"
 version = "0.1.0"
-description = "Add your description here"
+description = "Multi-agent streamlit app"
 readme = "README.md"
 requires-python = ">=3.7"
-
 dependencies = [
-    "streamlit>=1.33.0",
-    "openai>=1.0.0",
-    "python-dotenv>=0.9.0"
+    "python-dotenv>=0.9.0",
+    "streamlit>=1.32.0",
+    "openai>=1.3.7",
 ]
