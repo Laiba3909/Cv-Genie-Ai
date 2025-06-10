@@ -44,6 +44,8 @@ If any information is missing, still generate the best possible version with wha
 expand about me if small by adding user skills and experience make professional
 
 just work with user data make expoerience quite good by your version
+
+if somebody dont fill the info tell them first fill all info then try again in warning form
 """
 )
 
@@ -77,7 +79,6 @@ with st.form("cv_form"):
     skills = st.text_area("Your Skills", placeholder="e.g. HTML, CSS, JavaScript, React, TypeScript, Tailwind")
     experience = st.text_area("Experience", placeholder="e.g. Internship,Job")
 
-    st.checkbox("✅ I confirm the above information is accurate.")
     submitted = st.form_submit_button("✨ Generate CV")
 
 
@@ -111,7 +112,6 @@ def call_agent():
         st.write()
         st.balloons()
         st.info("✨ Your CV is ready! You're going to shine bright! 💖")
-        st.success("✅ CV Generated!")
 
     if "final_output" in st.session_state:
           st.subheader("📄 Your CV Output")
