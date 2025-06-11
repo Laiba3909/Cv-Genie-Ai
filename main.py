@@ -60,10 +60,10 @@ st.image("logo.png",  width=300)
 
 with st.form("cv_form"):
     st.subheader("👤 Bio Data")
-    name = st.text_input("Full Name", placeholder="e.g. Laiba Noman")
+    name = st.text_input("Full Name", placeholder="e.g. john")
     phone = st.text_input("Phone Number", placeholder="e.g. 03XXXXXXXXX")
-    email = st.text_input("Email", placeholder="e.g. laiba@email.com")
-    address = st.text_input("Address", placeholder="e.g. Bufferzone, Karachi")
+    email = st.text_input("Email", placeholder="e.g. abc@email.com")
+    address = st.text_input("Address", placeholder="e.g.  abc, city")
     about = st.text_area("About Yourself", placeholder="Write a short bio about yourself...")
 
     st.subheader("🎓 Education")
